@@ -582,34 +582,8 @@ export default function WalidDiamant() {
         <ProductDetail product={selectedProduct} allProducts={products} onBack={goHome} onOrder={openOrder} />
       ) : (
         <>
-          {/* HERO */}
-          <div className="hero-container" style={{
-            minHeight: "88vh", display: "flex", flexDirection: "column",
-            alignItems: "center", justifyContent: "center", textAlign: "center",
-            padding: "4rem 2rem",
-            background: "radial-gradient(ellipse at 60% 40%, rgba(197, 160, 89, 0.08) 0%, transparent 65%), #09090b",
-            position: "relative", overflow: "hidden",
-            opacity: heroVisible ? 1 : 0, transform: heroVisible ? "translateY(0)" : "translateY(24px)",
-            transition: "opacity 0.9s ease, transform 0.9s ease",
-          }}>
-            <div style={{ position: "absolute", width: "700px", height: "700px", border: "1px solid rgba(212,175,55,0.06)", borderRadius: "50%", top: "50%", left: "50%", transform: "translate(-50%,-50%)", pointerEvents: "none" }} />
-            <div style={{ position: "absolute", width: "500px", height: "500px", border: "1px solid rgba(212,175,55,0.08)", borderRadius: "50%", top: "50%", left: "50%", transform: "translate(-50%,-50%)", pointerEvents: "none" }} />
-
-            <h1 className="hero-title" style={{ fontSize: "clamp(3.5rem, 8vw, 6.5rem)", fontWeight: 300, lineHeight: 1.1, letterSpacing: "-0.02em", marginBottom: "3rem", maxWidth: "900px" }}>
-              <span style={{ fontWeight: 700, color: S.gold }}>Walid Diamant</span>
-            </h1>
-            <div className="hero-stats" style={{ display: "flex", gap: "3rem", marginTop: "5rem", borderTop: "1px solid rgba(212,175,55,0.12)", paddingTop: "2.5rem" }}>
-              {[["500+", "Pièces Vendues"], ["58", "Wilayas Livrées"]].map(([num, label]) => (
-                <div key={label} style={{ textAlign: "center" }}>
-                  <p style={{ fontSize: "2rem", fontWeight: 700, color: S.gold, margin: 0, lineHeight: 1 }}>{num}</p>
-                  <p style={{ fontSize: "12px", color: S.dim, marginTop: "6px", letterSpacing: "0.1em", textTransform: "uppercase" }}>{label}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
           {/* COLLECTIONS */}
-          <section id="collections" style={{ padding: "5rem 2rem", maxWidth: "1200px", margin: "0 auto" }}>
+          <section id="collections" style={{ padding: "6rem 2rem 5rem", maxWidth: "1200px", margin: "0 auto", width: "100%" }}>
             <div style={{ textAlign: "center", marginBottom: "3rem" }}>
               <p style={{ fontSize: "11px", letterSpacing: "0.3em", textTransform: "uppercase", color: S.gold, marginBottom: "0.75rem" }}>✦ Nos Créations ✦</p>
               <h2 style={{ fontSize: "clamp(2rem, 3vw, 3rem)", fontWeight: 300, margin: 0 }}>
